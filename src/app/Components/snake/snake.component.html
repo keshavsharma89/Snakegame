@@ -1,0 +1,6 @@
+<div class="container">
+	<p class="end">{{msg}}</p>
+	<div class="board">
+		<div class="square" [ngClass]="{'snake':cell.snakebody, 'target':cell.target, 'snakehead':cell.snakehead, 'snaketail':cell.snaketail}" *ngFor="let cell of board" ></div>
+	</div>
+</div>

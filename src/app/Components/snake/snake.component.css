@@ -1,0 +1,61 @@
+.container{
+	margin: 0 auto;
+    width: 44%;
+}
+.square.snake {
+    background-color: green;
+    border-radius: 15px;
+}
+.square.snakehead {
+    border-radius: 6px;
+    border: 1px solid green;
+}
+.end{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+.board {
+	display: flex;
+	width: 600px;
+	height: 600px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	max-width: 600px;
+	background-color: white;
+    box-shadow: 7px 7px 8px #afafaf;
+    margin-top: 25px;
+    border-top: 2px solid #dcdcdc;
+    border-left: 2px solid #dcdcdc;
+    
+    
+	background-image: url(images/snake.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, left top;
+    
+}
+.square {
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    /*border: 0.25px solid #f9f9f9;*/
+    font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.square.target{
+	background-color: red;
+	background: -webkit-radial-gradient(circle, red, yellow); /* Safari */
+	background: -o-radial-gradient(circle, red, yellow); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, red, yellow); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, red, yellow); /* Standard syntax */
+	
+	
+	border-radius: 23px;
+	
+}
+
